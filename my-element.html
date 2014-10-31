@@ -1,13 +1,13 @@
-<link rel='import' href='bower_components/core-ajax/core-ajax.html'>
+<link rel="import" href="bower_components/core-ajax/core-ajax.html">
 
-<polymer-element name='my-element'>
+<polymer-element name="my-element">
   <template>
-    <core-ajax id='ajax'
+    <core-ajax id="ajax"
                auto
-               url='http://gdata.youtube.com/feeds/api/videos/'
-               params='{"alt","json", "q":"chrome"}'
-               handleAs='json'
-               on-core-response='{{handleResponse}}'></core-ajax>
+               url="http://gdata.youtube.com/feeds/api/videos/"
+               handleAs="json"
+               on-core-response="{{handleResponse}}"></core-ajax>
+               <!-- how to escape quotes? params='{"alt","json", "q":"chrome"}'-->
   </template>
-  <script src='my-element.js'></script>
+  <script src="my-element.js"></script>
 </polymer-element>
